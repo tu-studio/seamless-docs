@@ -1,0 +1,30 @@
+name: build
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build_docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: get repo and submodules
+        uses: actions/checkout@v4
+      - name: setup python
+        uses: actions/setup-python@v6
+        with:
+          python-version '3.x'
+      - name: install pip dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install sphinx shibuya myst-parser
+      - name: build sphinx
+        run: |
+          sphinx-build -b html sphinx _build
+      - name: Deploy to GitHub Pages
+        uses: Cecilapp/GitHub-Pages-deploy@v3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          build_dir: _build
