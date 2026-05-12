@@ -1,20 +1,12 @@
-# ShowControl
+# Showcontrol
 
-ShowControl can be used via OSC messages (used by the [SeamLessControl](https://github.com/ntonnaett/seamlesscontrol) GUI application)
-or by using the web interface.
+Showcontrol is the scheduler powering automated playback in the humboldt-forum. The preferred way of control is using the webinterface, alternatively the api can be used directly.
 
 ## SystemD services
 
 ShowControl usually starts as a systemd user service. 
 
 * __showcontrol__: Scheduler, OSC server, Web Interface
-
-The web interface using the Gtk broadway web backend is deprecated. It was
-managed by systemd user services too.
-
-* __seamlesscontrol__: SeamLessControl GUI application as web service
-* __broadwayd__: Gtk web backend 
-
 
 
 ## OSC Commands

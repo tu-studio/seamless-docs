@@ -2,7 +2,7 @@
 
 The following flow chart visualizes the interconnection between the software components. Scroll down to get the exact input and output assignment.
 
-![Signal Flow](graphics/hufo_flow_2.png)
+![Signal Flow](../graphics/hufo_signalflow.svg)
 
 ## Input-Output Assignment
 
@@ -14,7 +14,7 @@ Inputs  | Source
 ---     | ---  
 001-032  | Source channels from Mac Book
 033-036  | Direct to 1st order HOA
-037-052  | Direct to 3rd order HOA
+033-048  | Direct to 3rd order HOA
 053      | Direct to SUB
 065-096  | Source channels from Mac Book
 097-100  | Direct to 1st order HOA

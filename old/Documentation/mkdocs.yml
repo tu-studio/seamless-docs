@@ -2,9 +2,11 @@ site_name: SeamLess
 repo_url: https://github.com/anwaldt/seamless
 
 theme:
-    name: material
-    highlightjs: true
-    logo: graphics/interface_HVC_small.png
+  name: material
+  highlightjs: true
+  logo: graphics/interface_HVC_small.png
+  features:
+    - navigation.indexes
 
 plugins:
 #    - with-pdf
@@ -31,22 +33,19 @@ markdown_extensions:
 #    ../graphics/
 #      hufo_flow_1.png
 
-nav:
-#    - Back to Project Page: https://hvc.berlin/projects/hufo-listening-room/
-    - About the System: about.md
-    - Reaper User Guide: reaper.md
-    - SeamLess Plugins:
-      - Plugins: plugins.md
-      - OSC Paths: paths.md
-    - Technical Documentation:
-      - Signal Flow: signalflow.md
-      - SuperCollider: supercollider.md
-      - WFS/WONDER: wonder.md
-      - Reverb: reverb.md
-      - OSC Router: oscrouter.md
-      - Show Control:
-        - General: showcontrol/showcontrol.md
-        - WebControl: showcontrol/webcontrol.md
-      - System:
-        - Setup: system/system_setup.md
-        - Backup: system/timeshift.md
+# nav:
+# #    - Back to Project Page: https://hvc.berlin/projects/hufo-listening-room/
+#     - About the System: about.md
+#     - Reaper User Guide: reaper.md
+#     - SeamLess Plugins:
+#       - Plugins: plugins.md
+#       - OSC Paths: paths.md
+#     - Technical Documentation:
+#       - technical/index.md
+#       - Signal Flow: signalflow.md
+#       - Show Control:
+#         - General: showcontrol/showcontrol.md
+#         - WebControl: showcontrol/webcontrol.md
+#       - System:
+#         - Setup: system/system_setup.md
+#         - Backup: system/timeshift.md
