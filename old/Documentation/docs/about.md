@@ -3,7 +3,7 @@
 ## Concept
 
 
-The Ethnomusicology Museum at the newly built
+The Ethnomusicology Museum at the
 [Humboldt Forum](https://www.humboldtforum.org/en/) features a listening room for immersive
 illustration of relevant auditory content.
 It is unique in that it combines multiple methods for sound field synthesis,
@@ -45,7 +45,7 @@ Every sound event in a project or composition can be connected to such a virtual
 allowing to place it in the listening space.
 Depending on the preferred workflow, different tools can be used for a dynamic
 arrangement of the individual sound sources.
-The provided tools in [Reaper](reaper/) grant a quick entry
+The provided tools in REAPER grant a quick entry
 by providing control through simple automation trajectories in a DAW project.
 
 #### The Send-System
