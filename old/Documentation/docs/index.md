@@ -14,13 +14,13 @@ In these locations WFS and Ambisonics playback is combined, although all kinds o
 
 | Name | Description |
 | --- | ---|
-| [OSC-Kreuz]() | central interface for OSC messages, automatically translates incoming OSC messages to match expected formats of the rendering engines and distributes them to all connected receivers |
-| [Audio Matrix]() | |
-| [Wonder]() | |
-| [SeamLess Plugin Suite]() | |
-| [Jack-Connection-Manager]() | |
-| [Configs]() | |
-| [Ansible]() | Playbooks for installation, management and maintenance of SeamLess clusters. |
+| [OSC-Kreuz](https://tu-studio.github.io/osc-kreuz/) | central interface for OSC messages, automatically translates incoming OSC messages to match expected formats of the rendering engines and distributes them to all connected receivers |
+| [Audio Matrix](https://tu-studio.github.io/audio-matrix/) | |
+| [Wonder](https://tu-studio.github.io/wonder/) | |
+| [SeamLess Plugin Suite](https://github.com/tu-studio/seamless-plugin-suite) | |
+| [Jack-Connection-Manager](https://github.com/tu-studio/jack-connection-manager) | |
+| [Configs](https://github.com/tu-studio/seamless-configs) | |
+| [Ansible playbooks](https://github.com/tu-studio/seamless-install-maintain) | Playbooks for installation, management and maintenance of SeamLess clusters. |
 
 currently the system also relies on the following components for playback:
 
@@ -29,7 +29,12 @@ currently the system also relies on the following components for playback:
 
 ----
 
-  **2021 - TU Studio Team:**    
-  *Henrik von Coler*  
-  *Paul Schuladen*  
-  *Nils Tonnätt*  
+### Developed and maintained by the TU Studio Team
+- *Fares Schulz*
+- *Manolo Müller*
+
+#### Previous Team-members
+- *Max Weidauer*
+- *Henrik von Coler*  
+- *Paul Schuladen*  
+- *Nils Tonnätt*  
