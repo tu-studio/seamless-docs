@@ -5,7 +5,7 @@ on:
       - main
       - gh-actions
     paths:
-      - 'docs/**'
+      - 'old/Documentation/**'
   workflow_dispatch:
 permissions:
   contents: write
