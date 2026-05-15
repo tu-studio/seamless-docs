@@ -4,7 +4,8 @@ repo_url: https://github.com/tu-studio/seamless-docs
 theme:
   name: material
   highlightjs: true
-#   logo: graphics/interface_HVC_small.png
+  logo: graphics/studio-logo.png
+  favicon: graphics/studio-logo.png
   palette:
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"

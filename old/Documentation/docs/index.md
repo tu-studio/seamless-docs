@@ -31,6 +31,14 @@ currently the system also relies on the following components for playback:
 - [IEM Plugin Suite](https://https://plugins.iem.at/)
     - the AllRADecoder and DistanceCompensator are used for ambisonics decoding, using a modified headless build found [here](https://github.com/tu-studio/IEMPluginSuite) 
 
+## Installation of the System
+Since all installations of the SeamLess system will vary wildly in setup it is hard to give a universal guide.
+A specific guide to our installation of the SeamLess system at Humboldt-Forum or the TU can be found [here](https://github.com/tu-studio/seamless-install-maintain/blob/main/README.md), that might serve as inspiration for your setup.
+
+The core component to the SeamLess system is the OSC-Kreuz in combination with the Audio Matrix, different software for spatialization can be put behind them.
+
+
+
 
 ----
 
