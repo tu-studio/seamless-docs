@@ -1,21 +1,11 @@
-# change channel routing
-
-There is only one 3rd order ambisonics decoder now, so the output channels have to be adjusted:
-
-- 1st order ambi: channel 33-36
-- 3rd order ambi: channel 33-48
-- omni: channel 33
-- lfe: channel 50
-
-The SeamLess source channels (1-32) stay the same.
-
-# Coordinate Transformation
+# Migration of old pieces
+## Coordinate Transformation
 
 During the consolidation of the seamless system into seamless v2 the coordinate system was changed.
 The x-Axis runs along the default viewing direction of the listener.
 The coordinate systems were normalized
 
-## Automatic
+### Automatic
 For pieces composed for the EN325 or the HuFo his can be done using the reascripts in this [repo](https://github.com/TU-Studio/ReaScripts).
 1. open reaper-session of the piece that should be rotated (best to do it in a copy) on a computer with both the old and the new seamless client installed
 2. load the reascripts (`Actions->Show Action List->New Action->Load ReaScript`)
@@ -28,10 +18,10 @@ For pieces composed for the EN325 or the HuFo his can be done using the reascrip
 9. Yay! Yippee
 
 
-## Manual
+### Manual
 
 
-### 1. rotation of the coordinate system
+#### 1. rotation of the coordinate system
 
 For Pieces for the H0104 or HuFo
 first rotate the coordinate system:
@@ -41,7 +31,7 @@ x_\text{rotated} = - y_\text{old}\\
 y_\text{rotated} = x_\text{old}
 $$
 
-### 2. move coordinate origin (H0104 only)
+#### 2. move coordinate origin (H0104 only)
 
 $$
 x_\text{offset} = 12.9246\\
@@ -55,7 +45,7 @@ x_{\text{recentered}} = x_{\text{rotated}} + x_\text{offset} \\
 y_{\text{recentered}} = y_{\text{rotated}} + y_\text{offset}
 $$
 
-### 3. apply scaling
+#### 3. apply scaling
 
 Scaling factor $S$
 
@@ -71,10 +61,22 @@ y_\text{scaled} = y_\text{recentered}/{S}\\
 z_\text{scaled} = z/{S}
 $$
 
-### 4. Apply flip of axis (H0104 only)
+#### 4. Apply flip of axis (H0104 only)
 
 flip y axis
 
 $$
 y_\text{flipped} = -y_\text{scaled}
 $$
+
+
+## change channel routing
+
+There is only one 3rd order ambisonics decoder now, so the output channels have to be adjusted:
+
+- 1st order ambi: channel 33-36
+- 3rd order ambi: channel 33-48
+- omni: channel 33
+- lfe: channel 50
+
+The SeamLess source channels (1-32) stay the same.

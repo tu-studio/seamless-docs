@@ -1,4 +1,5 @@
-# known problems (and workarounds and possible solutions for them)
+# Known Problems 
+## (and workarounds and possible solutions for them)
 
 ## PCs don't always shutdown properly when restarting
 

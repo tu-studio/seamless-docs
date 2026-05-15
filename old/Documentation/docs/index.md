@@ -3,6 +3,8 @@
 SeamLess is the modular and distributed spatial audio rendering system powering the listening room at [Humboldt Forum](https://www.humboldtforum.org/en/), Berlin and the [TU Studio](https://www.tu.berlin/ak/einrichtungen-services/tu-studio).
 In these locations WFS and Ambisonics playback is combined, although all kinds of spatialization are possible.
 
+The key focus of the SeamLess system is distributed rendering on Linux Clusters to enable handling of a large amount of output channels, while keeping setup for artists to a minimum.
+
 
 **If you want to know more about the concept, continue [here](about/)** 
 
@@ -15,17 +17,20 @@ In these locations WFS and Ambisonics playback is combined, although all kinds o
 | Name | Description |
 | --- | ---|
 | [OSC-Kreuz](https://tu-studio.github.io/osc-kreuz/) | central interface for OSC messages, automatically translates incoming OSC messages to match expected formats of the rendering engines and distributes them to all connected receivers |
-| [Audio Matrix](https://tu-studio.github.io/audio-matrix/) | |
-| [Wonder](https://tu-studio.github.io/wonder/) | |
-| [SeamLess Plugin Suite](https://github.com/tu-studio/seamless-plugin-suite) | |
-| [Jack-Connection-Manager](https://github.com/tu-studio/jack-connection-manager) | |
-| [Configs](https://github.com/tu-studio/seamless-configs) | |
+| [Audio Matrix](https://tu-studio.github.io/audio-matrix/) | flexible multichannel DSP program written in C++, controllable with OSC, receiving gains and positional data from the OSC-Kreuz for Renderer Preprocessing and ambisonics encoding |
+| [Wonder](https://tu-studio.github.io/wonder/) | WFS rendering suite written in C++. for SeamLess only the actual renderer `tWonder` is used. Is able to run distributed and handles both focused and unfocused virtual sound sources |
+| [SeamLess Plugin Suite](https://github.com/tu-studio/seamless-plugin-suite) | Plugins for all common DAWs to control the SeamLess system during audio production |
+| [Jack-Connection-Manager](https://github.com/tu-studio/jack-connection-manager) | Python tool for managing connections in JACK setups with clients with high number of in/outputs while maintaining readable config files |
+| [Configs](https://github.com/tu-studio/seamless-configs) | Configuration files for all SeamLess setups maintained by the TU Studio Team, some tools for managing the speaker files required to create these configs can be found in [this repo](https://github.com/tu-studio/seamless-config-tools) |
 | [Ansible playbooks](https://github.com/tu-studio/seamless-install-maintain) | Playbooks for installation, management and maintenance of SeamLess clusters. |
 
 currently the system also relies on the following components for playback:
 
 - [REAPER](https://reaper.fm)
+    - used as playback system, remote controlled using OSC
 - [IEM Plugin Suite](https://https://plugins.iem.at/)
+    - the AllRADecoder and DistanceCompensator are used for ambisonics decoding, using a modified headless build found [here](https://github.com/tu-studio/IEMPluginSuite) 
+
 
 ----
 

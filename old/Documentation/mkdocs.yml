@@ -4,7 +4,25 @@ repo_url: https://github.com/tu-studio/seamless-docs
 theme:
   name: material
   highlightjs: true
-  logo: graphics/interface_HVC_small.png
+#   logo: graphics/interface_HVC_small.png
+  palette:
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
   features:
     - navigation.indexes
 
@@ -18,6 +36,9 @@ plugins:
 #      cite_style: "pandoc"
 extra:
     generator: false
+
+extra_css:
+  - stylesheets/extra.css
 
 markdown_extensions:
   - attr_list
