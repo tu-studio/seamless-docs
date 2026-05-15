@@ -15,13 +15,12 @@ open production project and hufo_show project as separate project tabs in Reaper
 TODO: instructions for cleaning up production project ..
 
 - Arrange session to have exact same layout/channel structure as the hufo_show_project
-    - Some tracks might be hidden and can be shown in the Track Manager (Menu: View->Track Manager) by clicking on the fields in the TCP and MCP columns
+    - Some tracks might be hidden and can be shown in the Track Manager (Menu: `View->Track Manager`) by clicking on the fields in the TCP and MCP columns
 - Every Automation Lane for every plugin (on a channel that contains audio) needs at least one automation point:
     - Action: "Envelope: Show all envelopes for all tracks"
     - Insert help marker shortly before the start of the first media item and
     - move transport to marker
-    - Bind action "Envelope: Insert new point at current position (do not remove
-    - nearby points)" to a key combination such as Opt+.
+    - Bind action "Envelope: Insert new point at current position (do not remove nearby points)" to a key combination such as Opt+.
     - Select any envelope in the track control panel and execute key combination
     - Repeat last step for every envelope (it is currently not possible to automatically select the next envelope)
 - Use **razor editing** to select all media items including automation points
