@@ -27,6 +27,9 @@
     
       <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
       
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
       
 
 
@@ -44,6 +47,8 @@
       
     
     
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -53,7 +58,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -80,7 +92,8 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="." title="SeamLess" class="md-header__button md-logo" aria-label="SeamLess" data-md-component="logo">
       
-  <img src="graphics/interface_HVC_small.png" alt="logo">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -103,6 +116,32 @@
         </div>
       </div>
     </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
     
     
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
@@ -189,7 +228,8 @@
   <label class="md-nav__title" for="__drawer">
     <a href="." title="SeamLess" class="md-nav__button md-logo" aria-label="SeamLess" data-md-component="logo">
       
-  <img src="graphics/interface_HVC_small.png" alt="logo">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
     SeamLess
@@ -585,7 +625,7 @@
   <span class="md-ellipsis">
     
   
-    Signal Flow
+    Signal Flow (Humboldt Forum)
   
 
     
@@ -614,122 +654,6 @@
     
   
     Setting up the System
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
-        
-          
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Showcontrol
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Showcontrol
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="showcontrol/showcontrol/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Showcontrol
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="showcontrol/webcontrol/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    WebControl
   
 
     
@@ -844,6 +768,7 @@
 <h1 id="seamless">SeamLess</h1>
 <p>SeamLess is the modular and distributed spatial audio rendering system powering the listening room at <a href="https://www.humboldtforum.org/en/">Humboldt Forum</a>, Berlin and the <a href="https://www.tu.berlin/ak/einrichtungen-services/tu-studio">TU Studio</a>.
 In these locations WFS and Ambisonics playback is combined, although all kinds of spatialization are possible.</p>
+<p>The key focus of the SeamLess system is distributed rendering on Linux Clusters to enable handling of a large amount of output channels, while keeping setup for artists to a minimum.</p>
 <p><strong>If you want to know more about the concept, continue <a href="about/">here</a></strong> </p>
 <!-- **If you want to get started setting up the SeamLess system for your system go [here](technical/)** -->
 
@@ -864,23 +789,23 @@ In these locations WFS and Ambisonics playback is combined, although all kinds o
 </tr>
 <tr>
 <td><a href="https://tu-studio.github.io/audio-matrix/">Audio Matrix</a></td>
-<td></td>
+<td>flexible multichannel DSP program written in C++, controllable with OSC, receiving gains and positional data from the OSC-Kreuz for Renderer Preprocessing and ambisonics encoding</td>
 </tr>
 <tr>
 <td><a href="https://tu-studio.github.io/wonder/">Wonder</a></td>
-<td></td>
+<td>WFS rendering suite written in C++. for SeamLess only the actual renderer <code>tWonder</code> is used. Is able to run distributed and handles both focused and unfocused virtual sound sources</td>
 </tr>
 <tr>
 <td><a href="https://github.com/tu-studio/seamless-plugin-suite">SeamLess Plugin Suite</a></td>
-<td></td>
+<td>Plugins for all common DAWs to control the SeamLess system during audio production</td>
 </tr>
 <tr>
 <td><a href="https://github.com/tu-studio/jack-connection-manager">Jack-Connection-Manager</a></td>
-<td></td>
+<td>Python tool for managing connections in JACK setups with clients with high number of in/outputs while maintaining readable config files</td>
 </tr>
 <tr>
 <td><a href="https://github.com/tu-studio/seamless-configs">Configs</a></td>
-<td></td>
+<td>Configuration files for all SeamLess setups maintained by the TU Studio Team, some tools for managing the speaker files required to create these configs can be found in <a href="https://github.com/tu-studio/seamless-config-tools">this repo</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/tu-studio/seamless-install-maintain">Ansible playbooks</a></td>
@@ -890,8 +815,14 @@ In these locations WFS and Ambisonics playback is combined, although all kinds o
 </table>
 <p>currently the system also relies on the following components for playback:</p>
 <ul>
-<li><a href="https://reaper.fm">REAPER</a></li>
-<li><a href="https://https://plugins.iem.at/">IEM Plugin Suite</a></li>
+<li><a href="https://reaper.fm">REAPER</a><ul>
+<li>used as playback system, remote controlled using OSC</li>
+</ul>
+</li>
+<li><a href="https://https://plugins.iem.at/">IEM Plugin Suite</a><ul>
+<li>the AllRADecoder and DistanceCompensator are used for ambisonics decoding, using a modified headless build found <a href="https://github.com/tu-studio/IEMPluginSuite">here</a> </li>
+</ul>
+</li>
 </ul>
 <hr />
 <h3 id="developed-and-maintained-by-the-tu-studio-team">Developed and maintained by the TU Studio Team</h3>
