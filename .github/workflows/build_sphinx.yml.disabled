@@ -1,4 +1,4 @@
-name: build
+name: build github pages using sphinx
 
 on:
   push:

@@ -1,4 +1,4 @@
-name: Build GitHub Pages
+name: Build GitHub Pages using mkdocs
 on:
   push:
     branches:
