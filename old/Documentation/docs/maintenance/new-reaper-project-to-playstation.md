@@ -15,17 +15,17 @@ open production project and hufo_show project as separate project tabs in Reaper
 TODO: instructions for cleaning up production project ..
 
 - Arrange session to have exact same layout/channel structure as the hufo_show_project
-  - Some tracks might be hidden and can be shown in the Track Manager (Menu: View->Track Manager) by clicking on the fields in the TCP and MCP columns
+    - Some tracks might be hidden and can be shown in the Track Manager (Menu: View->Track Manager) by clicking on the fields in the TCP and MCP columns
 - Every Automation Lane for every plugin (on a channel that contains audio) needs at least one automation point:
-  - Action: "Envelope: Show all envelopes for all tracks"
-  - Insert help marker shortly before the start of the first media item and
-  - move transport to marker
-  - Bind action "Envelope: Insert new point at current position (do not remove
-  - nearby points)" to a key combination such as Opt+.
-  - Select any envelope in the track control panel and execute key combination
-  - Repeat last step for every envelope (it is currently not possible to automatically select the next envelope)
+    - Action: "Envelope: Show all envelopes for all tracks"
+    - Insert help marker shortly before the start of the first media item and
+    - move transport to marker
+    - Bind action "Envelope: Insert new point at current position (do not remove
+    - nearby points)" to a key combination such as Opt+.
+    - Select any envelope in the track control panel and execute key combination
+    - Repeat last step for every envelope (it is currently not possible to automatically select the next envelope)
 - Use **razor editing** to select all media items including automation points
-  - Also include MASTER_DCA in the selection, even if its empty
+    - Also include MASTER_DCA in the selection, even if its empty
 - Regularly copy the selected razor edit (CMD+C)
 
 ### In the hufo_show project
@@ -37,14 +37,14 @@ TODO: instructions for cleaning up production project ..
 - Ensure MASTER_DCA is selected in the track control panel by clicking on it
 - Menu: Insert->New MIDI Item
 - Menu: Insert->Region (from time selection)
-  - **NB**: The automation points previously inserted need to be AFTER the start of the region, transport needs to move over these points for the plugin to get the value
+    - **NB**: The automation points previously inserted need to be AFTER the start of the region, transport needs to move over these points for the plugin to get the value
 - Name the region (does not have to be exact, only for reference)
 - Add end marker
-  - Move time selection to end of region
-  - Menu: Insert->Marker (prompt for name)
-  - Name: !1016
-  - ID: one bigger than end marker of last piece
-  - IMPORTANT: this has to be the same id as audio_index in the seamless-config!
+    - Move time selection to end of region
+    - Menu: Insert->Marker (prompt for name)
+    - Name: !1016
+    - ID: one bigger than end marker of last piece
+    - IMPORTANT: this has to be the same id as audio_index in the seamless-config!
 - Check proper IP address in SeamLess Plugins
 - place the time cursor at the beginning of the trailer to make sure plugins are initialized with zeros
 
