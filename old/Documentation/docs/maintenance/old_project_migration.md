@@ -7,6 +7,7 @@ The coordinate systems were normalized
 
 ### Automatic
 For pieces composed for the EN325 or the HuFo his can be done using the reascripts in this [repo](https://github.com/TU-Studio/ReaScripts).
+
 1. open reaper-session of the piece that should be rotated (best to do it in a copy) on a computer with both the old and the new seamless client installed
 2. load the reascripts (`Actions->Show Action List->New Action->Load ReaScript`)
 3. open the script `migrate_seamless_plugins.lua` for editing
