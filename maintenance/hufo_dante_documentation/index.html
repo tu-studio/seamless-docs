@@ -12,7 +12,7 @@
         <link rel="prev" href="../">
       
       
-        <link rel="next" href="../jacktrip_connection/">
+        <link rel="next" href="../hufo_dsp_components/">
       
       
         
@@ -332,6 +332,8 @@
       
         
       
+        
+      
     
     
     
@@ -490,6 +492,34 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hufo_dsp_components/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DSP Components at HuFo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -728,17 +758,32 @@
 
 
 <h1 id="dante-at-humboldt-forum">Dante at Humboldt-Forum</h1>
-<p>The Dante network is in its own VLAN on the HuFo network. The network is managed with a DHCP server, static ips are therefore not needed. There is also no longer a Dante Domain Manager involved.</p>
+<p>The Dante network is in its own VLAN on the HuFo network. The network is
+managed with a DHCP server, static ips are therefore not needed. There is also
+no longer a Dante Domain Manager involved.</p>
 <h2 id="connect-to-the-dante-network-and-authenticate">Connect to the Dante Network and Authenticate</h2>
-<p>In order to connect to the Dante Network and see its connections you need to use the software Dante Controller. There you select the desired network device. First you need to select which network device should be used.
-There are two main options of connecting:</p>
+<p>In order to connect to the Dante Network and see its connections you need to
+use the software Dante Controller. There you select the desired network device.
+First you need to select which network device should be used. There are two
+main options of connecting:</p>
 <h3 id="connecting-using-an-ethernet-dongle">connecting using an ethernet dongle</h3>
-<p>If you are using our normal ethernet dongle just connect it to the dante network port (service 1 or 2). DHCP takes care of the IP, everything is eazy peazy lemon squeazy</p>
+<p>If you are using our normal ethernet dongle just connect it to the dante
+network port (service 1 or 2). DHCP takes care of the IP, everything is eazy
+peazy lemon squeazy</p>
 <h3 id="connecting-using-the-ethernet-bridge-of-the-danteface">connecting using the ethernet bridge of the danteface</h3>
-<p>The RME Digiface Dante has multiple MAC-Adresses/IP adresses.
-The IP being used for Dante is setup using the Dante Controller (and/or DHCP). The ip we can use for accessing the dante network for use with the dante controller is a seperate one. It is also being assigned using DHCP.
-Currently the ethernet bridge only works on the Studio Macbook for reasons unknown to the author. For the danteface 1 (3900-aio-dante-01 or something like that) select "use shared interface" and select feth1001. For the Danteface 2 (the one usually only used by the hufo people, 3900-aio-dante-02) do not select "use shared interface", the interface is shown as en26 or something similar.</p>
-<p>If some devices are not shown enable "show hidden devices" in the View settings of the dante controller.</p>
+<p>The RME Digiface Dante has multiple MAC-Adresses/IP adresses. The IP being used
+for Dante is setup using the Dante Controller (and/or DHCP). The ip we can use
+for accessing the dante network for use with the dante controller is a seperate
+one. It is also being assigned using DHCP. As of writing (9.6.2026), the
+ethernet bridge unfortunately does not work on any computers the author was
+able to get their hands on. Therefore, it is recommended to always connect by
+ethernet dongle. It used to work on the studio MacBook in the following manner:</p>
+<p>For the danteface 1 (3900-aio-dante-01 or something like that) select "use
+shared interface" and select feth1001. For the Danteface 2 (the one usually
+only used by the hufo people, 3900-aio-dante-02) do not select "use shared
+interface", the interface is shown as en26 or something similar.</p>
+<p>If some devices are not shown enable "show hidden devices" in the View settings
+of the dante controller.</p>
 
 
 

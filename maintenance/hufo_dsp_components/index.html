@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../hufo_dsp_components/">
+        <link rel="prev" href="../hufo_dante_documentation/">
       
       
-        <link rel="next" href="../known_problems/">
+        <link rel="next" href="../jacktrip_connection/">
       
       
         
@@ -23,7 +23,7 @@
     
     
       
-        <title>Jacktrip Connection - SeamLess Documentation</title>
+        <title>DSP Components at HuFo - SeamLess Documentation</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#jacktrip-connection" class="md-skip">
+        <a href="#dsp-components-at-hufo" class="md-skip">
           Skip to content
         </a>
       
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Jacktrip Connection
+              DSP Components at HuFo
             
           </span>
         </div>
@@ -415,10 +415,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../hufo_dsp_components/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DSP Components at HuFo
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -434,6 +461,65 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#qsc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        QSC
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="QSC">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#qsc-core-web-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        QSC Core Web interface
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hd2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HD2
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -443,19 +529,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../jacktrip_connection/" class="md-nav__link">
         
   
   
@@ -471,7 +548,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -616,6 +692,53 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#qsc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        QSC
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="QSC">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#qsc-core-web-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        QSC Core Web interface
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hd2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HD2
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -634,12 +757,29 @@
   
 
 
-<h1 id="jacktrip-connection">Jacktrip Connection</h1>
-<p>to connect via jacktrip (for example to play audio from linux machine)</p>
-<p>on the playstation run <code>jacktrip -S</code>
-on the client run <code>jacktrip --receivechannels 1 --sendchannels 8 -C 3900-ZG-PS-01.tu-ctrl -K jacktrip_client -D</code>, if you run it on a pipewire system prepend the command with <code>PIPEWIRE_LATENCY="2048/48000"</code></p>
-<p>on your client connect the desired inputs to the jacktrip client. they are mapped to the seamless system starting from channel 0</p>
-<p>at 2048 buffersize only 16 channels total (ins+outs) are possible</p>
+<h1 id="dsp-components-at-hufo">DSP Components at HuFo</h1>
+<h2 id="qsc">QSC</h2>
+<p>DSP processor, function currently unknown. Runs a 'design file', which has
+eluded some attempts at inspection.</p>
+<ul>
+<li>Hostname: 3900-ZG-AD-01</li>
+<li>IP: 10.30.80.100</li>
+</ul>
+<h3 id="qsc-core-web-interface">QSC Core Web interface</h3>
+<p>The web interface is reachable over a separate IP address (no hostname as
+of 15.6.2026) but does not offer any useful functionality.</p>
+<ul>
+<li>IP: 10.30.70.208</li>
+<li>login: tu-studio</li>
+</ul>
+<h2 id="hd2">HD2</h2>
+<p>Every single WFS panel features a DSP unit by HD2. They are accessible on
+the <code>tu-dante</code> network. Configuration is done using the Windows-only
+program <a href="https://www.four-audio.com/downloads-de/">HD2Control</a>. Use Wine
+on Linux and Whisky on macOS to get it running. It is recommended to turn
+off Wi-Fi before connecting, as the software might get confused if it's
+on.</p>
+<p>As of writing (9.6.2026), every panel features the same EQ curve.</p>
 
 
 
