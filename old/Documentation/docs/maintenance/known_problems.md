@@ -20,11 +20,6 @@ machines in the evening.
 - restarting also works, but the current restart service has permission
   troubles
 
-## SeamLess Plugins don't send out current position
-
-Will be fixed in next plugin version, current workaround: changing all relevant
-automation curves before moving them to the correct settings (urgh)
-
 ## no network directly after boot causes some services to fail
 
 If a user-service needs network to function make it depend on the special user
