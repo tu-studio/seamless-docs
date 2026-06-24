@@ -1,19 +1,17 @@
 # Documentation of the SeamLess system
 
-currently built using mkdocs, will be migrated to sphinx in the future
-to build:
-
 ```bash
-cd old/Documentation
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements-docs.txt
 
 # To test the docs
-mkdocs serve --livereload
+sphinx-autobuild docs _build/html
 
+# To build the docs
+sphinx-build -W --keep-going -b html docs _build/html
+# To build the docs (strict)
+sphinx-build -b html docs _build/html
 # To deploy the docs
-mkdocs gh-deploy
-
-
+gh workflow run build_sphinx.yml --ref main
 ```
