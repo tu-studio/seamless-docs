@@ -2,12 +2,14 @@
 
 ## (and workarounds and possible solutions for them)
 
-## PCs don't always shutdown properly when restarting
+## Dell PCs don't always shutdown properly when restarting
 
-If it takes a long time for the system to restart, hard reset the PC by holding
-its power button for some seconds.
-
-Apparently that's a feature of these Dell PCs
+If it takes a long time for the system to restart, hard reset the PC by
+holding its power button for some seconds. This is a known bug in the Dell
+units, which might also affect Wake-On-LAN. The bug is known to cause the
+servers to hang on reboot, leaving them dead in the water. As of 24.6.026,
+it was decided to add a power distribution unit to cut power to the
+machines in the evening. 
 
 ## Sound cards are sometimes not recognized on cold boot
 
