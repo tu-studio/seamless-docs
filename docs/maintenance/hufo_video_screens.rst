@@ -373,3 +373,12 @@ Kiosk-Session neustarten
 
    # Als avm-User:
    sudo systemctl restart lightdm            # Startet kiosk-Session komplett neu
+
+
+Video-Format
+------------
+
+* Codec: Timecode + H.264
+* Colour profile: HD (1-1-1)
+* Dimensions: 1920x1080
+
