@@ -8,6 +8,8 @@ Guides in this category are primarily focused on the SeamLess setup maintained b
 
    hufo_dante_documentation
    hufo_dsp_components
+   hufo_video_screens
+   hufo_video_video_sync
    jacktrip_connection
    known_problems
    new-reaper-project-to-playstation
