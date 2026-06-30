@@ -378,7 +378,9 @@ Kiosk-Session neustarten
 Video-Format
 ------------
 
-* Codec: Timecode + H.264
-* Colour profile: HD (1-1-1)
-* Dimensions: 1920x1080
+* Bildformat: HD 1929x1080
+* Video Codec: H264
+* Video-Farbprofil: Rec709 – TV Standard auch für HD)
+* Chroma Subsampling:  i.d.R.  4:2:2
+* Embedded Timecode (kein Burn in): nur als im .mov Container realisierbar (mp4 z.B. bietet meines Wissens keinen embedded TC)
 
