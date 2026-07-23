@@ -15,3 +15,4 @@ Guides in this category are primarily focused on the SeamLess setup maintained b
    new-reaper-project-to-playstation
    old_project_migration
    signalflow
+   full_install
