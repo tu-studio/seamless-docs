@@ -1,7 +1,8 @@
 Maintenance
 ===========
 
-Guides in this category are primarily focused on the SeamLess setup maintained by the TU studio team at humboldt forum and at the TU.
+Guides in this category are primarily focused on the SeamLess setup maintained
+by the TU studio team at Humboldt Forum and at the TU.
 
 .. toctree::
    :maxdepth: 1
@@ -15,4 +16,3 @@ Guides in this category are primarily focused on the SeamLess setup maintained b
    new-reaper-project-to-playstation
    old_project_migration
    signalflow
-   full_install

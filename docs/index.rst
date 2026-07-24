@@ -1,10 +1,16 @@
 SeamLess
 ========
 
-SeamLess is the modular and distributed spatial audio rendering system powering the listening room at `Humboldt Forum <https://www.humboldtforum.org/en/>`_, Berlin and the `TU Studio <https://www.tu.berlin/ak/einrichtungen-services/tu-studio>`_.
-In these locations WFS and Ambisonics playback is combined, although all kinds of spatialization are possible.
+SeamLess is the modular and distributed spatial audio rendering system powering
+the listening room at `Humboldt Forum <https://www.humboldtforum.org/en/>`_,
+Berlin and the `TU Studio
+<https://www.tu.berlin/ak/einrichtungen-services/tu-studio>`_. In these
+locations WFS and Ambisonics playback is combined, although all kinds of
+spatialization are possible.
 
-The key focus of the SeamLess system is distributed rendering on Linux Clusters to enable handling of a large amount of output channels, while keeping setup for artists to a minimum.
+The key focus of the SeamLess system is distributed rendering on Linux clusters
+to enable handling of a large amount of output channels, while keeping setup for
+artists to a minimum.
 
 If you want to know more about the concept, continue :doc:`here <about>`.
 
@@ -13,6 +19,7 @@ If you want to know more about the concept, continue :doc:`here <about>`.
    :caption: Contents
 
    about
+   installation/index
    maintenance/index
    archive/index
 
@@ -40,20 +47,24 @@ Software Components in the SeamLess System
    * - `Ansible playbooks <https://github.com/tu-studio/seamless-install-maintain>`_
      - Playbooks for installation, management and maintenance of SeamLess clusters.
 
-currently the system also relies on the following components for playback:
+Currently the system also relies on the following components for playback:
 
 - `REAPER <https://reaper.fm>`_
   - used as playback system, remote controlled using OSC
 - `IEM Plugin Suite <https://plugins.iem.at/>`_
-  - the AllRADecoder and DistanceCompensator are used for ambisonics decoding, using a modified headless build found `here <https://github.com/tu-studio/IEMPluginSuite>`_
+  - the AllRADecoder and DistanceCompensator are used for Ambisonics decoding,
+  using a modified headless build found `here
+  <https://github.com/tu-studio/IEMPluginSuite>`_
 
 Installation of the System
 --------------------------
 
-Since all installations of the SeamLess system will vary wildly in setup it is hard to give a universal guide.
-A specific guide to our installation of the SeamLess system at Humboldt-Forum or the TU can be found `here <https://github.com/tu-studio/seamless-install-maintain/blob/main/README.md>`_, that might serve as inspiration for your setup.
-
-The core component to the SeamLess system is the OSC-Kreuz in combination with the Audio Matrix, different software for spatialization can be put behind them.
+Since all installations of the SeamLess system will vary wildly in setup it is
+hard to give a universal guide. A specific guide to our installation of the
+SeamLess system at Humboldt-Forum or the TU can be found :doc:`here
+<installation/index>`, which might serve as inspiration for your setup. The core
+component to the SeamLess system is the OSC-Kreuz in combination with the Audio
+Matrix, different software for spatialization can be put behind them.
 
 Developed and maintained by the TU Studio Team
 ----------------------------------------------

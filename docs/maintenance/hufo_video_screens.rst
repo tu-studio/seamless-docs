@@ -8,8 +8,8 @@ Grundsystem, anschließend ``firstrun.sh`` für die Kiosk-Konfiguration
 1. Überblick
 ------------
 
-Diese Systeme sind Kiosk-Videoplayer auf Basis von Debian Trixie (13).
-Jeder PC startet automatisch einen MPV-Player im Vollbild.
+Diese Systeme sind Kiosk-Videoplayer auf Basis von Debian Trixie (13). Jeder PC
+startet automatisch einen MPV-Player im Vollbild.
 
 Es gibt zwei Gruppen:
 
@@ -81,8 +81,10 @@ Die Installation läuft aktuell noch im alten Netz ``172.25.18.0/22``. Die PCs b
      - Administration (TU Berlin)
      - SSH, VNC, sudo (mit Passwort)
 
-Alle drei User gehören zur Gruppe ``avm`` — können gegenseitig Dateien lesen und schreiben.
-SSH-Keys sind für ``avm`` und ``kiosk`` hinterlegt. Für ``tu`` müssen die SSH-Keys des TU-Teams noch eingetragen werden (``/home/tu/.ssh/authorized_keys``).
+Alle drei User gehören zur Gruppe ``avm`` — können gegenseitig Dateien lesen und
+schreiben. SSH-Keys sind für ``avm`` und ``kiosk`` hinterlegt. Für ``tu`` müssen
+die SSH-Keys des TU-Teams noch eingetragen werden
+(``/home/tu/.ssh/authorized_keys``).
 
 3. Verzeichnisstruktur
 ----------------------
@@ -212,7 +214,11 @@ Damit kann MPV von einem anderen Rechner gesteuert werden:
    Die Bridge filtert auf ``play`` und ``pause`` — andere Befehle werden verworfen. Für volle MPV-Steuerung direkt per SSH und ``mpv_control`` arbeiten.
 
 .. warning::
-   **mmm:** Der Befehl, den wir brauchen, um ein bestimmtes Video zu schicken, ist ``playlist-play-index``. Das funktioniert nur, weil ``grep -E play|pause`` aus Versehen auch ``playlist-play-index`` matcht lol. Die Filterung könnte also robuster sein, da das Ganze vielleicht randomly breakt/nur aus Versehen funktioniert.
+   **mmm:** Der Befehl, den wir brauchen, um ein bestimmtes Video zu schicken,
+   ist ``playlist-play-index``. Das funktioniert nur, weil ``grep -E
+   play|pause`` aus Versehen auch ``playlist-play-index`` matcht lol. Die
+   Filterung könnte also robuster sein, da das Ganze vielleicht randomly
+   breakt/nur aus Versehen funktioniert.
 
 5. MPV-Sync (Multi-Player-Synchronisation)
 ------------------------------------------
@@ -373,7 +379,6 @@ Kiosk-Session neustarten
 
    # Als avm-User:
    sudo systemctl restart lightdm            # Startet kiosk-Session komplett neu
-
 
 Video-Format
 ------------

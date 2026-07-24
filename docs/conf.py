@@ -34,6 +34,11 @@ html_theme_options = {
             "summary": "About the System",
         },
         {
+            "title": "Installation",
+            "url": "installation/index",
+            "summary": "Installation",
+        },
+        {
             "title": "Maintenance",
             "url": "maintenance/index",
             "summary": "Maintenance",
