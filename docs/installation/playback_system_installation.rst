@@ -9,13 +9,11 @@ Setting up the playback machine
 -------------------------------
 
 REAPER will already have been installed in the previous steps outlined in
-:doc:`this guide <full_install>`. Now we need to add some more components.
+:doc:`this guide <baseline_installation>`. Now we need to add some more components.
 
-HINT:
-
-The REAPER version is specified in ``program_versions.yml``,
-consequently it can be overwritten using ``-e`` for both
-``reaper_archive_name`` and ``reaper_url``
+.. hint:: The REAPER version is specified in ``program_versions.yml``,
+    consequently it can be overwritten using ``-e`` for both
+    ``reaper_archive_name`` and ``reaper_url``
 
 1. Download the x64 Linux version of the SWS extension for REAPER from
    `here <https://sws-extension.org/>`__ onto your local machine.
