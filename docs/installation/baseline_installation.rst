@@ -58,7 +58,10 @@ documented in :doc:``this guide <intro_to_ansible_playbooks>``.
 .. warning:: Don't do this more than once!
    
 8.  When in HuFo: run HuFo specific scripts:
+
    1.  ``install/hufo_setup_proxy_server.yml``
    2. ``install/hufo_first_run.yml``
    3. ``install/hufo_avm_user.yml``
-12. Start main installation script: ``install/full_install.yml``
+
+9. Start main installation script: ``install/full_install.yml``
+
