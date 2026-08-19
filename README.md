@@ -12,6 +12,7 @@ sphinx-autobuild docs _build/html
 sphinx-build -W --keep-going -b html docs _build/html
 # To build the docs (strict)
 sphinx-build -b html docs _build/html
-# To deploy the docs
+# After each `git push`, the docs are deployed using a GitHub action
+# To deploy the docs manually
 gh workflow run build_sphinx.yml --ref main
 ```
