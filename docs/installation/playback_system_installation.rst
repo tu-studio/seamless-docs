@@ -3,7 +3,7 @@ Playback system installation
 
 This guide shows you how to get the playback system up and running on the
 dedicated playback PC. We assume familiarity with the use of Ansible playbooks,
-as documented in :doc:`this guide <intro_to_ansible_playbooks>`.
+as documented in :doc:``this guide <intro_to_ansible_playbooks>``.
 
 Setting up the playback machine
 -------------------------------
