@@ -5,7 +5,7 @@ Install Debian 12 on all machines. At the moment, this is a manual
 process. In the installer select or do the following:
 
 .. hint:: The subheaders of this document are just for orientation and do not
-   correspond by name to steps in the actual installer.
+   correspond by name to steps in the actual Debian installer.
 
 Basics
 ------
